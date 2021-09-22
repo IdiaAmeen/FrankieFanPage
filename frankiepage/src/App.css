@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+body {
+  background-color: white;
+}
+
+#avi {
+  height: 300px;
+  width: 300px;
+
+  position: relative;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-top: 30px;
+  z-index: 9999;
+}
+
+/* #enter{
+
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}  */
+
+/* box-shadow: 5px 10px black; */
+#greeting {
+  color: #081108;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 8.5s steps(30, start), link-caret 0.5s step-end infinite;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+hr {
+  border-top: 1px solid white;
+  width: 65%;
+}
+/* .section {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-size: 65px;
+  color: black;
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.projectcard {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 15px;
+}
+@media (max-width: 992px) {
+  #greeting {
+    font-size: 28px;
+  }
+  #enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 100px;
+  }
+}
