@@ -49,6 +49,9 @@ body {
   animation: balloons 4s ease-in-out infinite;
   transform-origin: bottom center;
 }
+.balloons {
+  overflow: hidden;
+}
 .balloon {
   display: inline-block;
 
@@ -196,7 +199,7 @@ hr {
   align-content: center;
   margin-bottom: 15px;
 }
-@media (max-width: 992px) {
+@media (max-width: 812px) {
   #greeting {
     font-size: 20px;
   }
@@ -224,11 +227,74 @@ hr {
     transform-origin: bottom center;
     margin-top: 5px;
   }
+  /* .balloon:nth-child(7) {
+    color: hsl(23, 44%, 46%);
+    display: none;
+  }
+  .balloon:nth-child(4) {
+    color: hsl(23, 44%, 46%);
+    display: none;
+  } */
+  .balloon:after {
+    display: inline-block;
+    top: 53px;
+    position: absolute;
+    height: 200px;
+    width: 1px;
+    margin: 0 auto;
+    content: "";
+    background: hsl(70, 31%, 85%);
+  }
+  .gif {
+    height: 200px;
+  }
+}
+@media (min-width: 415px) {
+  #avi {
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  /* body {
+   
+  } */
+  #greeting {
+    font-size: 20px;
+  }
+  #enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 100px;
+  }
+  .balloon {
+    display: inline-block;
+
+    width: 60px;
+    height: 65px;
+    margin-bottom: 4px;
+    background: hsl(215, 50%, 65%);
+    border-radius: 80%;
+    position: relative;
+    box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+    /* margin: 10px 7px; */
+    transition: transform 0.5s ease;
+    z-index: 10;
+    animation: balloons 4s ease-in-out infinite;
+    transform-origin: bottom center;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
   .balloon:nth-child(7) {
     color: hsl(23, 44%, 46%);
     display: none;
   }
   .balloon:nth-child(4) {
+    color: hsl(23, 44%, 46%);
+    display: none;
+  }
+  .balloon:nth-child(2) {
     color: hsl(23, 44%, 46%);
     display: none;
   }
@@ -241,5 +307,20 @@ hr {
     margin: 0 auto;
     content: "";
     background: hsl(70, 31%, 85%);
+  }
+  .gif {
+    display: none;
+  }
+  #avi {
+    position: relative;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 450px;
+    border-radius: 5%;
+    margin-top: 10px;
+    z-index: 9999;
   }
 }
