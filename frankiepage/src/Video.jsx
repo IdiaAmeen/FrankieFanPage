@@ -15,8 +15,8 @@ export default function VideoJS() {
       ))} */}
       <VideoPlayer
         src={videoSrc}
-        width={250}
-        height={350}
+        width={500}
+        height={500}
         poster="https://i.imgur.com/GXNnHmD.jpg"
       />
     </div>
