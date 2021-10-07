@@ -3,10 +3,12 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Favicon from "react-favicon";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <Router>
+    <Favicon url="https://i.imgur.com/qcpkZ5R.jpg" />
     <App />
   </Router>,
   document.getElementById("root")
