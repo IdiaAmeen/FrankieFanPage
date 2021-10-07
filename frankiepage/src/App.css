@@ -250,12 +250,12 @@ hr {
     height: 200px;
   }
 }
-@media (min-width: 415px) {
+@media (min-width: 429px) {
   #avi {
     display: none;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 429px) {
   /* body {
    
   } */
