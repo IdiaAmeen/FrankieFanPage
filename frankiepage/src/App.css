@@ -204,6 +204,7 @@ hr {
   #greeting {
     font-size: 20px;
   }
+
   #enter {
     display: flex;
     justify-content: center;
@@ -254,11 +255,17 @@ hr {
   #avi {
     display: none;
   }
+  #mobile {
+    display: none;
+  }
 }
 @media (max-width: 429px) {
   /* body {
    
   } */
+  .open {
+    display: none;
+  }
   #greeting {
     font-size: 20px;
   }

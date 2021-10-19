@@ -1,10 +1,10 @@
 import React from "react";
 import VideoPlayer from "react-video-js-player";
 
-import MERCEE from "./MERCEE.mp4";
+import FrankieVid from "./FrankieVid.mp4";
 
 export default function VideoJS() {
-  const videoSrc = MERCEE;
+  const videoSrc = FrankieVid;
 
   return (
     <div className="videos">
@@ -17,7 +17,7 @@ export default function VideoJS() {
         src={videoSrc}
         width={500}
         height={500}
-        poster="https://i.imgur.com/GXNnHmD.jpg"
+        poster="https://i.imgur.com/E6CHsw6.jpg"
       />
     </div>
   );

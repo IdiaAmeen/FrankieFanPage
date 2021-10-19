@@ -7,7 +7,11 @@ export default class Gift extends Component {
       <div>
         <div className="outer-modal">
           <div className="inner-modal">
-            <button onClick={this.props.handleClose}>X</button>
+            <div className="exit">
+              <button onClick={this.props.handleClose} id="x">
+                X
+              </button>
+            </div>
             <Video />
           </div>
         </div>

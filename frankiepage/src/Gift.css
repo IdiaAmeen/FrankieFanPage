@@ -28,3 +28,22 @@
   font-family: Rubik, sans-serif;
   font-size: 18px;
 }
+
+#x {
+  font-family: Rubik, sans-serif;
+  font-size: 18.2px;
+  border-radius: 21.7px;
+  width: 40px;
+  color: grey;
+  padding-top: 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.exit {
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: black;
+}
